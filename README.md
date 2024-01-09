@@ -13,10 +13,13 @@
 ```
 npm i -g @nestjs/cli
 ```
-
 4. Start the database
 ```
 docker-compose up -d
+```
+5. Rebuild database with seed
+```
+http://localhost:3000/api/v2/seed
 ```
 
 ## Stack Used
