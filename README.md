@@ -25,8 +25,24 @@ yarn start:dev
 ```
 8. Rebuild database with seed
 ```
-http://localhost:3000/api/v2/seed
+http://localhost:3001/api/v2/seed
 ```
+
+#Production Build
+1. Create the .env.prod file
+2. Fill in the production environment variables
+3. Create the new image
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+```
+
+#Notes
+Redeploy on Heroku without changes:
+```
+git commit --allow-empty -m "Tigger Heroku deploy"
+git push heroku <master|main>
+```
+
 
 ## Stack Used
 * MongoDB
