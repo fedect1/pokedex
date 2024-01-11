@@ -28,7 +28,7 @@ yarn start:dev
 http://localhost:3001/api/v2/seed
 ```
 
-#Production Build
+# Production Build
 1. Create the .env.prod file
 2. Fill in the production environment variables
 3. Create the new image
@@ -36,7 +36,7 @@ http://localhost:3001/api/v2/seed
 docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
 ```
 
-#Notes
+# Notes
 Redeploy on Heroku without changes:
 ```
 git commit --allow-empty -m "Tigger Heroku deploy"
